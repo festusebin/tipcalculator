@@ -1,0 +1,136 @@
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ */
+body {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  background: #17355c;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #17355c, #10e1);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #17355c, #10e1);
+  /* W3C, IE 10+ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#container {
+  height: 525px;
+  width: 360px;
+  margin: 100px auto;
+  background: #f7f7f7;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+h1 {
+/*   background: #173; */
+  background: #17355c;
+  color: white;
+  padding: 10px 10px;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 2px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+p {
+  padding-left: 20px;
+}
+
+form input[type="text"] {
+  width: 90px;
+}
+
+input {
+  padding-left: 20px;
+}
+
+#billAmount {
+  font-size: 14px;
+  color: #17355c;
+  background-color: #f7f7f7;
+  width: 60%;
+  padding: 5px 8px;
+}
+
+#billAmount:focus {
+  background: #fff;
+  border: 2px solid #10e1;
+  outline: none;
+}
+
+#serviceQuality {
+  padding: 6px 10px;
+  margin-left: 16px;
+  font-size: 14px;
+}
+
+#peopleAmount {
+  width: 60%;
+  padding: 5px 8px;
+  margin-left: 36px;
+  color: #17355c;
+  background-color: #f7f7f7;
+  font-size: 14px;
+}
+
+.nairaSign {
+  display: inline;
+}
+
+button {
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  margin: 30px auto;
+  background: #17355c;
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+  font-size: 17px;
+  color: white;
+  border: none;
+}
+
+button:hover {
+  background: white;
+  color: #17355c;
+  border: 2px solid #17355c;
+  border-bottom-color: #111;
+}
+
+button:active {
+  position: relative;
+  top: 1px;
+}
+
+#totalTip {
+  font-size: 20px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+#totalTip::before {
+  content: 'Tip Amount:';
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  text-transform: uppercase;
+}
+
+#totalTip sup {
+  font-size: 16px;
+  top: 14px;
+}
+
+#totalTip small {
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+}
